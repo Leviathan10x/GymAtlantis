@@ -1,0 +1,75 @@
+﻿<Window x:Class="Atlantis_Gym.Medidas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atlantis_Gym"
+        mc:Ignorable="d"
+        Title="Medidas" Height="515.5" Width="732">
+    <Grid>
+        <Label x:Name="label" Content="Documento:" HorizontalAlignment="Left" Margin="38,30,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy" Content="Nombre" HorizontalAlignment="Left" Margin="254,30,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelDoc" Content="" HorizontalAlignment="Left" Margin="131,30,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14" Width="118"/>
+        <Label x:Name="labelNombre" Content="" HorizontalAlignment="Left" Margin="324,30,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14" Width="217"/>
+        <Label x:Name="label_Copy1" Content="Peso:" HorizontalAlignment="Left" Margin="38,96,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy2" Content="gr." HorizontalAlignment="Left" Margin="186,96,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textPeso" HorizontalAlignment="Left" Height="26" Margin="86,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy3" Content="Estatura:" HorizontalAlignment="Left" Margin="38,127,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textEstatura" HorizontalAlignment="Left" Height="26" Margin="115,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy4" Content="cm" HorizontalAlignment="Left" Margin="215,127,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy5" Content="Edad:" HorizontalAlignment="Left" Margin="38,158,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textEdad" HorizontalAlignment="Left" Height="26" Margin="115,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy6" Content="Índice de masa corporal: " HorizontalAlignment="Left" Margin="304,96,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Height="2" Margin="439,166,0,0" VerticalAlignment="Top" Width="4"/>
+        <Label x:Name="labelIndmasa" Content="" HorizontalAlignment="Left" Height="26" Margin="345,127,0,0" VerticalAlignment="Top" Width="89" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Height="82" Margin="546,40,0,0" VerticalAlignment="Top" Width="96" Cursor="Hand" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click">
+            <Image x:Name="guardar_png" Height="72" Source="guardar.png" Stretch="Fill" Width="75"/>
+        </Button>
+        <Button x:Name="button_Copy" HorizontalAlignment="Left" Height="82" Margin="552,214,0,0" VerticalAlignment="Top" Width="96" Cursor="Hand" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Copy_Click">
+            <Image x:Name="cancelar_png" Height="72" Source="cancelar.png" Stretch="Fill" Width="77"/>
+        </Button>
+        <Button x:Name="button_Copy1" HorizontalAlignment="Left" Height="41" Margin="254,112,0,0" VerticalAlignment="Top" Width="47" Cursor="Hand" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Copy1_Click">
+            <Image x:Name="recargar_png" Height="31" Source="recargar.png" Stretch="Fill" Width="37"/>
+        </Button>
+        <Button x:Name="button1" HorizontalAlignment="Left" Height="82" Margin="552,127,0,0" VerticalAlignment="Top" Width="90" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button1_Click">
+            <Image x:Name="creciente_png" Height="68" Source="creciente.png" Stretch="Fill" Width="71"/>
+        </Button>
+        <Label x:Name="label_Copy7" Content="Brazo derecho:" HorizontalAlignment="Left" Margin="38,196,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textBarzoD" HorizontalAlignment="Left" Height="26" Margin="204,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy8" Content="cm" HorizontalAlignment="Left" Margin="304,196,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy9" Content="Brazo izquierdo:" HorizontalAlignment="Left" Margin="38,227,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textBarzoI" HorizontalAlignment="Left" Height="26" Margin="204,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy10" Content="cm" HorizontalAlignment="Left" Margin="304,227,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy11" Content="Antebrazo derecho:" HorizontalAlignment="Left" Margin="38,258,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textAntebarzoD" HorizontalAlignment="Left" Height="26" Margin="204,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy12" Content="cm" HorizontalAlignment="Left" Margin="304,258,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy13" Content="Antebrazo izquierdo:" HorizontalAlignment="Left" Margin="38,289,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textAntebarzoI" HorizontalAlignment="Left" Height="26" Margin="204,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy14" Content="cm" HorizontalAlignment="Left" Margin="304,289,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy15" Content="Hombros:" HorizontalAlignment="Left" Margin="38,320,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textHombro" HorizontalAlignment="Left" Height="26" Margin="204,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy16" Content="cm" HorizontalAlignment="Left" Margin="304,320,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy17" Content="Pecho:" HorizontalAlignment="Left" Margin="38,351,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textPecho" HorizontalAlignment="Left" Height="26" Margin="204,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy18" Content="cm" HorizontalAlignment="Left" Margin="304,351,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy19" Content="Abdomen:" HorizontalAlignment="Left" Margin="38,382,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textAbdomen" HorizontalAlignment="Left" Height="26" Margin="204,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy20" Content="cm" HorizontalAlignment="Left" Margin="304,382,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy21" Content="Gluteo:" HorizontalAlignment="Left" Margin="38,413,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textGluteo" HorizontalAlignment="Left" Height="26" Margin="204,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy22" Content="cm" HorizontalAlignment="Left" Margin="304,413,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy23" Content=" Pierna derecha:" HorizontalAlignment="Left" Margin="379,320,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textPiernaD" HorizontalAlignment="Left" Height="26" Margin="545,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy24" Content="cm" HorizontalAlignment="Left" Margin="645,320,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy25" Content=" Pierna izquierda:" HorizontalAlignment="Left" Margin="379,351,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textPiernaI" HorizontalAlignment="Left" Height="26" Margin="545,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy26" Content="cm" HorizontalAlignment="Left" Margin="645,351,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy27" Content=" Pantorrilla derecha:" HorizontalAlignment="Left" Margin="379,382,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textPantorrillaD" HorizontalAlignment="Left" Height="26" Margin="545,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy28" Content="cm" HorizontalAlignment="Left" Margin="645,382,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy29" Content=" Pantorrilla izquierda:" HorizontalAlignment="Left" Margin="379,413,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textPantorrillaI" HorizontalAlignment="Left" Height="26" Margin="545,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged" FontSize="14" FontFamily="Arial Rounded MT Bold" TextAlignment="Right"/>
+        <Label x:Name="label_Copy30" Content="cm" HorizontalAlignment="Left" Margin="645,413,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="Atlantis_Gym.EditarUsuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atlantis_Gym"
+        mc:Ignorable="d"
+        Title="Editar Usuario" Height="450" Width="800">
+    <Grid Cursor="None">
+        <Label x:Name="label" Content="Nombre:" HorizontalAlignment="Left" Height="33" Margin="10,123,0,0" VerticalAlignment="Top" Width="101" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <TextBox x:Name="textNombre" HorizontalAlignment="Left" Height="23" Margin="116,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="label_Copy" Content="Apellido:" HorizontalAlignment="Left" Height="33" Margin="10,161,0,0" VerticalAlignment="Top" Width="101" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <TextBox x:Name="textApellido" HorizontalAlignment="Left" Height="23" Margin="116,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="label_Copy1" Content="Nro. cedula:" HorizontalAlignment="Left" Height="33" Margin="10,199,0,0" VerticalAlignment="Top" Width="114" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <TextBox x:Name="textDoc" HorizontalAlignment="Left" Height="23" Margin="124,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="label_Copy2" Content="Teléfono:" HorizontalAlignment="Left" Height="33" Margin="10,237,0,0" VerticalAlignment="Top" Width="114" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <TextBox x:Name="textTelefono" HorizontalAlignment="Left" Height="23" Margin="124,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" FontFamily="Verdana" FontSize="14"/>
+        <Label x:Name="label_Copy3" Content="Dirección:" HorizontalAlignment="Left" Height="33" Margin="10,275,0,0" VerticalAlignment="Top" Width="114" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <TextBox x:Name="textDireccion" HorizontalAlignment="Left" Height="71" Margin="124,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontFamily="Verdana" FontSize="14"/>
+        <ComboBox x:Name="comboTipoUsuario" HorizontalAlignment="Left" Height="28" Margin="571,128,0,0" VerticalAlignment="Top" Width="172" FontFamily="Verdana" FontSize="14" Cursor="Hand">
+            <ListBoxItem Cursor="Hand" Content="ADMINISTRADOR"/>
+            <ListBoxItem Cursor="Hand" Content="USUARIO"/>
+        </ComboBox>
+        <Label x:Name="label_Copy4" Content="Tipo de Usuario:" HorizontalAlignment="Left" Height="33" Margin="417,128,0,0" VerticalAlignment="Top" Width="138" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <Label x:Name="label_Copy5" Content="Contraseña:" HorizontalAlignment="Left" Height="33" Margin="417,179,0,0" VerticalAlignment="Top" Width="113" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Height="33" Margin="535,179,0,0" VerticalAlignment="Top" Width="208" FontSize="14"/>
+        <Label x:Name="label_Copy6" Content="Confirmar:" HorizontalAlignment="Left" Height="33" Margin="417,222,0,0" VerticalAlignment="Top" Width="113" FontFamily="Arial Rounded MT Bold" FontSize="16" Cursor="None"/>
+        <PasswordBox x:Name="passwordBoxRepetir" HorizontalAlignment="Left" Height="33" Margin="535,222,0,0" VerticalAlignment="Top" Width="208" FontSize="14"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Height="85" Margin="447,279,0,0" VerticalAlignment="Top" Width="96" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button_Click">
+            <Image x:Name="guardar_png" Height="75" Source="guardar.png" Stretch="Fill" Width="76"/>
+        </Button>
+        <Button x:Name="button_Copy" HorizontalAlignment="Left" Height="85" Margin="601,279,0,0" VerticalAlignment="Top" Width="96" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button_Copy_Click">
+            <Image x:Name="cancelar_png" Height="68" Source="cancelar.png" Stretch="Fill" Width="86"/>
+        </Button>
+        <Button x:Name="button_Copy1" HorizontalAlignment="Left" Height="85" Margin="67,21,0,0" VerticalAlignment="Top" Width="96" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button_Copy1_Click">
+            <Image x:Name="carnet_de_identidad_png" Height="72" Source="carnet-de-identidad.png" Stretch="Fill" Width="77"/>
+        </Button>
+        <Button x:Name="button1" HorizontalAlignment="Left" Height="33" Margin="314,199,0,0" VerticalAlignment="Top" Width="35" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button1_Click">
+            <Image x:Name="buscar_de_nuevo_png" Height="23" Source="buscar-de-nuevo.png" Stretch="Fill" Width="25"/>
+        </Button>
+
+    </Grid>
+</Window>

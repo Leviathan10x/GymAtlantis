@@ -1,0 +1,71 @@
+﻿<Window x:Class="Atlantis_Gym.CerrarTurno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atlantis_Gym"
+        mc:Ignorable="d"
+        Title="Cerrar Turno" Height="732.7" Width="1041" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid Loaded="load1">
+        <Label x:Name="label" Content="Nombre:" HorizontalAlignment="Left" Height="32" Margin="10,10,0,0" VerticalAlignment="Top" Width="74" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="labelNombre" Content="" HorizontalAlignment="Left" Height="32" Margin="84,10,0,0" VerticalAlignment="Top" Width="235" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy" Content="Documento:" HorizontalAlignment="Left" Height="32" Margin="324,10,0,0" VerticalAlignment="Top" Width="112" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="labelDocumento" Content="" HorizontalAlignment="Left" Height="32" Margin="436,10,0,0" VerticalAlignment="Top" Width="152" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy1" Content="Tipo de ingreso" HorizontalAlignment="Left" Height="32" Margin="84,82,0,0" VerticalAlignment="Top" Width="160" FontFamily="Arial Black" FontSize="16"/>
+        <Label x:Name="label_Copy2" Content="Mensualidades" HorizontalAlignment="Left" Height="32" Margin="84,119,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy3" Content="Cantidad" HorizontalAlignment="Left" Height="32" Margin="324,82,0,0" VerticalAlignment="Top" Width="112" FontFamily="Arial Black" FontSize="16"/>
+        <Label x:Name="label_Copy4" Content="Total:" HorizontalAlignment="Left" Height="32" Margin="536,82,0,0" VerticalAlignment="Top" Width="65" FontFamily="Arial Black" FontSize="16"/>
+        <Label x:Name="labelCantidadMensual" Content="" HorizontalAlignment="Left" Height="32" Margin="338,119,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotalMensual" Content="" HorizontalAlignment="Left" Height="32" Margin="516,119,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy5" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,119,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy6" Content="Quincenales" HorizontalAlignment="Left" Height="32" Margin="84,167,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelCantidadQuinceban" Content="" HorizontalAlignment="Left" Height="32" Margin="338,167,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotalQuincenal" Content="" HorizontalAlignment="Left" Height="32" Margin="516,167,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy9" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,165,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy10" Content="Semanales" HorizontalAlignment="Left" Height="32" Margin="84,215,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelCantidadSemanal" Content="" HorizontalAlignment="Left" Height="32" Margin="338,215,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotalSemanales" Content="" HorizontalAlignment="Left" Height="32" Margin="516,215,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy13" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,215,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy14" Content="Diarios" HorizontalAlignment="Left" Height="32" Margin="84,263,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelCantidadDiarios" Content="" HorizontalAlignment="Left" Height="32" Margin="338,263,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotalDiarios" Content="" HorizontalAlignment="Left" Height="32" Margin="516,263,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy17" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,263,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy18" Content="2 Meses" HorizontalAlignment="Left" Height="32" Margin="84,308,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelCantidad2Meses" Content="" HorizontalAlignment="Left" Height="32" Margin="338,308,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotal2Meses" Content="" HorizontalAlignment="Left" Height="32" Margin="516,308,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy21" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,308,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy22" Content="6 Meses" HorizontalAlignment="Left" Height="32" Margin="84,399,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelCantidad6Meses" Content="" HorizontalAlignment="Left" Height="32" Margin="338,399,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotal6Meses" Content="" HorizontalAlignment="Left" Height="32" Margin="516,399,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy25" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,399,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy26" Content="3 Meses" HorizontalAlignment="Left" Height="32" Margin="84,354,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelCantidad3Meses" Content="" HorizontalAlignment="Left" Height="32" Margin="338,354,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotal3Meses" Content="" HorizontalAlignment="Left" Height="32" Margin="516,354,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy29" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,354,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy30" Content="Anuales" HorizontalAlignment="Left" Height="32" Margin="84,444,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="labelCantidadAños" Content="" HorizontalAlignment="Left" Height="32" Margin="338,444,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotalAños" Content="" HorizontalAlignment="Left" Height="32" Margin="516,444,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy33" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,444,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="label_Copy34" Content="Bebidas" HorizontalAlignment="Left" Height="32" Margin="84,519,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy37" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,518,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="labelCantidadBebidas" Content="" HorizontalAlignment="Left" Height="32" Margin="338,519,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotalBebidas" Content="" HorizontalAlignment="Left" Height="32" Margin="516,519,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy38" Content="Otros" HorizontalAlignment="Left" Height="32" Margin="84,556,0,0" VerticalAlignment="Top" Width="129" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy41" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,555,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Label x:Name="labelCantidadOtros" Content="" HorizontalAlignment="Left" Height="32" Margin="338,556,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="labelTotalOtros" Content="" HorizontalAlignment="Left" Height="32" Margin="516,556,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy44" Content="Total:" HorizontalAlignment="Left" Height="32" Margin="84,630,0,0" VerticalAlignment="Top" Width="65" FontFamily="Arial Black" FontSize="16"/>
+        <Label x:Name="labelTotalGeneral" Content="" HorizontalAlignment="Left" Height="32" Margin="516,625,0,0" VerticalAlignment="Top" Width="111" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy45" Content="$" HorizontalAlignment="Left" Height="32" Margin="492,625,0,0" VerticalAlignment="Top" Width="24" FontFamily="Arial Black" FontSize="14"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Height="108" Margin="800,384,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button_Click">
+            <Image x:Name="en_espera_png" Height="92" Source="en-espera.png" Stretch="Fill" Width="113"/>
+        </Button>
+        <Button x:Name="button_Copy" HorizontalAlignment="Left" Height="108" Margin="800,530,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button_Copy_Click">
+            <Image x:Name="cancelar_png" Height="94" Source="cancelar.png" Stretch="Fill" Width="114"/>
+        </Button>
+        <Label x:Name="label_Copy7" Content="---------------------------------------------------------------------------------------------------------------------------------------------" HorizontalAlignment="Left" Height="32" Margin="63,477,0,0" VerticalAlignment="Top" Width="636" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy8" Content="---------------------------------------------------------------------------------------------------------------------------------------------" HorizontalAlignment="Left" Height="32" Margin="63,593,0,0" VerticalAlignment="Top" Width="636" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Height="32" Margin="10,42,0,0" VerticalAlignment="Top" Width="248" FontSize="16" FontFamily="Arial" FontWeight="Bold" Foreground="#FF3A3FA8" Background="{x:Null}"/>
+
+    </Grid>
+</Window>

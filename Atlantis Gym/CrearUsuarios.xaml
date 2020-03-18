@@ -1,0 +1,38 @@
+﻿<Window x:Class="Atlantis_Gym.CrearUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atlantis_Gym"
+        mc:Ignorable="d"
+        Title="Nuevo Usuario" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="Nombre:" HorizontalAlignment="Left" Height="27" Margin="147,36,0,0" VerticalAlignment="Top" Width="127" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy" Content="Apellido:" HorizontalAlignment="Left" Height="27" Margin="147,68,0,0" VerticalAlignment="Top" Width="127" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy1" Content="Nro. de Cedula:" HorizontalAlignment="Left" Height="27" Margin="147,100,0,0" VerticalAlignment="Top" Width="127" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy2" Content="Teléfono:" HorizontalAlignment="Left" Height="27" Margin="147,132,0,0" VerticalAlignment="Top" Width="127" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy3" Content="Dirección:" HorizontalAlignment="Left" Height="27" Margin="147,164,0,0" VerticalAlignment="Top" Width="127" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <Label x:Name="label_Copy4" Content="Tipo de Usuario:" HorizontalAlignment="Left" Height="27" Margin="147,196,0,0" VerticalAlignment="Top" Width="127" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <TextBox x:Name="textNombre" HorizontalAlignment="Left" Height="27" Margin="279,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontFamily="Arial Rounded MT Bold" FontSize="16"/>
+        <TextBox x:Name="textApellido" HorizontalAlignment="Left" Height="27" Margin="279,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontFamily="Arial Rounded MT Bold" FontSize="16"/>
+        <TextBox x:Name="textNroDoc" HorizontalAlignment="Left" Height="27" Margin="279,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontFamily="Arial Rounded MT Bold" FontSize="16" TextChanged="TextNroDoc_TextChanged"/>
+        <TextBox x:Name="textTelefono" HorizontalAlignment="Left" Height="27" Margin="279,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontFamily="Arial Rounded MT Bold" FontSize="16"/>
+        <TextBox x:Name="textDireccion" HorizontalAlignment="Left" Height="27" Margin="279,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" FontFamily="Arial Rounded MT Bold" FontSize="16"/>
+        <ComboBox x:Name="comboTipo_Usuario" HorizontalAlignment="Left" Height="27" Margin="279,196,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="ComboBox_SelectionChanged" Cursor="Hand" SelectedIndex="1">
+            <ListBoxItem Cursor="Hand" Content="ADMINISTRADOR" FontSize="14"/>
+            <ListBoxItem Cursor="Hand" Content="USUARIO" FontSize="14"/>
+        </ComboBox>
+        <Button x:Name="button1" HorizontalAlignment="Left" Height="139" Margin="171,256,0,0" VerticalAlignment="Top" Width="145" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button1_Click">
+            <Image x:Name="guardar_png" Height="111" Source="guardar.png" Stretch="Fill" Width="125"/>
+        </Button>
+        <Button x:Name="button1_Copy" HorizontalAlignment="Left" Height="139" Margin="426,256,0,0" VerticalAlignment="Top" Width="145" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand">
+            <Image x:Name="cancelar_png" Height="115" Source="cancelar.png" Stretch="Fill" Width="126"/>
+        </Button>
+        <Image x:Name="usuario__3__png" Margin="10,36,667,281" Source="usuario (3).png" Stretch="Fill"/>
+        <Label x:Name="label_Copy5" Content="Nueva Contraseña:" HorizontalAlignment="Left" Height="27" Margin="518,36,0,0" VerticalAlignment="Top" Width="141" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <PasswordBox x:Name="passwordNueva" HorizontalAlignment="Left" Height="27" Margin="518,68,0,0" VerticalAlignment="Top" Width="197"/>
+        <Label x:Name="label_Copy6" Content="Repetir Contraseña:" HorizontalAlignment="Left" Height="27" Margin="518,100,0,0" VerticalAlignment="Top" Width="158" FontFamily="Arial Rounded MT Bold" FontSize="14"/>
+        <PasswordBox x:Name="passwordRepetir" HorizontalAlignment="Left" Height="27" Margin="518,132,0,0" VerticalAlignment="Top" Width="197"/>
+
+    </Grid>
+</Window>

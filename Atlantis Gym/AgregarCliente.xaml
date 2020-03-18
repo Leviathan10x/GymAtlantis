@@ -1,0 +1,65 @@
+﻿<Window x:Class="Atlantis_Gym.AgregarCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atlantis_Gym"
+        mc:Ignorable="d"
+        Title="AgregarCliente" Height="450" Width="947">
+    <Grid Background="#FFEBF7F7">
+        <Label x:Name="label" Content="Tipo de Documento" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="10,23,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy" Content="Nro. de Documento:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="10,109,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy1" Content="Nombre:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="10,176,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="textNombre" HorizontalAlignment="Left" Height="26" Margin="10,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="textDocumento" HorizontalAlignment="Left" Height="26" Margin="10,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="label_Copy2" Content="Apellido:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="10,241,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="textApellido" HorizontalAlignment="Left" Height="26" Margin="10,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="label_Copy3" Content="Telefono:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="10,318,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="textTelefono" HorizontalAlignment="Left" Height="26" Margin="10,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="label_Copy4" Content="Dirección:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="263,23,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="textDireccion" HorizontalAlignment="Left" Height="26" Margin="263,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <Label x:Name="label_Copy5" Content="Genero:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="263,93,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy7" Content="Estatura:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="263,181,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="textEstatura" HorizontalAlignment="Left" Height="26" Margin="263,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <Label x:Name="label_Copy8" Content="cm" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="38" Margin="357,209,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy9" Content="Tipo de pago:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="263,246,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <ComboBox x:Name="comboPago" HorizontalAlignment="Left" Height="29" Margin="263,275,0,0" VerticalAlignment="Top" Width="181" SelectionChanged="ComboPago_SelectionChanged">
+            <ListBoxItem Cursor="Hand" Content="Mensual"/>
+            <ListBoxItem Cursor="Hand" Content="Quincenal"/>
+            <ListBoxItem Cursor="Hand" Content="Semanal"/>
+            <ListBoxItem Cursor="Hand" Content="Diario"/>
+            <ListBoxItem Cursor="Hand" Content="2 Meses"/>
+            <ListBoxItem Content="3 Meses"/>
+            <ListBoxItem Cursor="Hand" Content="6 Meses"/>
+            <ListBoxItem Cursor="Hand" Content="Anual"/>
+        </ComboBox>
+        <ComboBox x:Name="comboGenero" HorizontalAlignment="Left" Height="29" Margin="263,127,0,0" VerticalAlignment="Top" Width="151">
+            <ListBoxItem Cursor="Hand" Content="Hombre"/>
+            <ListBoxItem Cursor="Hand" Content="Mujer"/>
+            <ListBoxItem Cursor="Hand" Content="Otro"/>
+        </ComboBox>
+        <ComboBox x:Name="comboTipoDoc" HorizontalAlignment="Left" Height="29" Margin="10,57,0,0" VerticalAlignment="Top" Width="101">
+            <ListBoxItem Cursor="Hand" Content="C.C."/>
+            <ListBoxItem Cursor="Hand" Content="T.I."/>
+            <ListBoxItem Cursor="Hand" Content="C.E."/>
+        </ComboBox>
+        <Label x:Name="label_Copy10" Content="Total pagado:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="119" Margin="263,309,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Label x:Name="label_Copy11" Content="$" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="23" Margin="247,338,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Button x:Name="button1" HorizontalAlignment="Left" Height="116" Margin="484,293,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Click="Button1_Click">
+            <Image x:Name="guardar_png" Height="83" Source="guardar.png" Stretch="Fill" Width="94"/>
+        </Button>
+        <Button x:Name="button1Cerrar" HorizontalAlignment="Left" Height="116" Margin="634,290,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Click="Button1Cerrar_Click">
+            <Image x:Name="cancelar_png" Height="79" Source="cancelar.png" Stretch="Fill" Width="90"/>
+        </Button>
+        <Label x:Name="labelTotal" Content="" HorizontalAlignment="Left" Height="29" Margin="270,338,0,0" VerticalAlignment="Top" Width="125" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="textDescuento" HorizontalAlignment="Left" Height="26" Margin="484,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+        <Label x:Name="label_Copy6" Content="Descuento:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="134" Margin="484,115,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Height="29" Margin="640,148,0,0" VerticalAlignment="Top" Width="32" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Button_Click">
+            <Image x:Name="recargar_png" Height="19" Source="recargar.png" Stretch="Fill" Width="22"/>
+        </Button>
+        <Label x:Name="labelDescrip" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="82" Width="286" Margin="484,193,0,0" FontFamily="Arial Rounded MT Bold"/>
+        <Button x:Name="button1_Copy1" HorizontalAlignment="Left" Height="116" Margin="770,89,0,0" VerticalAlignment="Top" Width="136" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button1_Copy_Click" Cursor="Hand">
+            <Image x:Name="evidencia_png" Height="96" Source="evidencia.png" Stretch="Fill" Width="112"/>
+        </Button>
+    </Grid>
+</Window>

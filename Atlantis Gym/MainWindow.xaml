@@ -1,0 +1,17 @@
+﻿<Window x:Name="Login" x:Class="Atlantis_Gym.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atlantis_Gym"
+        mc:Ignorable="d"
+        Title="Home" Height="285" Width="265" ShowInTaskbar="False" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,0" Background="#FF6C6C89">
+        <Label x:Name="label" Content="Usuario:" HorizontalAlignment="Left" Margin="65,23,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Arial Rounded MT Bold" FontSize="16" Foreground="White"/>
+        <Label x:Name="label1" Content="Contraseña:" HorizontalAlignment="Left" Margin="65,97,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Arial Rounded MT Bold" Foreground="White"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="65,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="White" Background="{x:Null}" BorderBrush="#FF8E919B"/>
+        <Button x:Name="button" Content="Aceptar" HorizontalAlignment="Left" Height="28" Margin="87,182,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click" Cursor="Hand"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="65,126,0,0" VerticalAlignment="Top" Width="120" Foreground="White" Background="{x:Null}" BorderBrush="#FF8E919B"/>
+
+    </Grid>
+</Window>
